@@ -1,0 +1,21 @@
+[*]
+end_of_line = lf
+insert_final_newline = true
+charset = utf-8
+trim_trailing_whitespace = true
+max_line_length = 150
+
+# JavaScript
+[*.{js,jsx,ts,tsx}]
+indent_style = space
+indent_size = 2
+
+# JSON
+[*.json]
+indent_style = space
+indent_size = 2
+
+# STYLES
+[*.{css,scss}]
+indent_style = space
+indent_size = 2

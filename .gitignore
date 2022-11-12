@@ -1,0 +1,13 @@
+node_modules/
+desktop.ini
+
+client/node_modules/
+client/.next/
+client/build/
+client/coverage/
+client/cypress/plugins/
+client/cypress/support/
+client/.env
+
+server/node_modules/
+server/.env
