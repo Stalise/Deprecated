@@ -1,0 +1,87 @@
+{
+  "extends": [
+    "stylelint-config-rational-order",
+    "stylelint-config-styled-components"
+  ],
+  "customSyntax": "@stylelint/postcss-css-in-js",
+  "rules": {
+    "indentation": [
+      2,
+      {
+        "message": "Отступ должен быть 2 пробела"
+      }
+    ],
+    "length-zero-no-unit": [
+      true,
+      {
+        "message": "Нулю не нужны единицы измерения"
+      }
+    ],
+    "max-empty-lines": [
+      1,
+      {
+        "message": "Максимум линий пустых допустимо: 1"
+      }
+    ],
+    "string-quotes": [
+      "single",
+      {
+        "message": "Нужно использовать одинарные кавычки"
+      }
+    ],
+    "no-missing-end-of-source-newline": [
+      true,
+      {
+        "message": "Файл должен заканичваться пустой строкой"
+      }
+    ],
+    "color-named": [
+      "never",
+      {
+        "message": "Цвета ключевыми словами писать нельзя"
+      }
+    ],
+    "color-hex-case": [
+      "lower",
+      {
+        "message": "Следует использовать нижний регистр при написании цветов"
+      }
+    ],
+    "color-hex-length": [
+      "long",
+      {
+        "message": "Следует использовать полное описание цвета"
+      }
+    ],
+    "no-duplicate-selectors": [
+      true,
+      {
+        "message": "Повторное написание селектора запрещено"
+      }
+    ],
+    "selector-max-empty-lines": [
+      0,
+      {
+        "message": "Пустые строки в селекторах недопустимы"
+      }
+    ],
+    "block-no-empty": [
+      true,
+      {
+        "message": "Пустые блоки писать не следует"
+      }
+    ],
+    "declaration-block-semicolon-newline-after": [
+      "always",
+      {
+        "message": "После точки с запятой перенос строки необходим"
+      }
+    ],
+    "declaration-block-trailing-semicolon": [
+      "always",
+      {
+        "message": "Свойство должно заканчивать точкой с запятой"
+      }
+    ]
+  }
+}

@@ -1,5 +1,7 @@
 {
-  "name": "client",
+  "name": "clever-shop",
+  "description": "Интернет-магазин одежды",
+  "author": "Stalise",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -7,7 +9,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint -c .eslintrc.json --ext .js,.jsx,.ts,.tsx --max-warnings=0 .",
-    "lint:fix": "npm run lint -- --fix"
+    "lint:fix": "npm run lint -- --fix",
+    "stylelint": "stylelint \"**/*.ts\" --max-warnings=0",
+    "stylelint:fix": "stylelint \"**/*.ts\" --fix"
   },
   "dependencies": {
     "@types/node": "18.11.9",
@@ -18,10 +22,18 @@
     "next": "13.0.3",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "styled-components": "^5.3.6",
     "typescript": "^4.8.4"
   },
   "devDependencies": {
+    "@stylelint/postcss-css-in-js": "^0.38.0",
+    "@types/styled-components": "^5.1.26",
     "@typescript-eslint/eslint-plugin": "^5.42.1",
-    "@typescript-eslint/parser": "^5.42.1"
+    "@typescript-eslint/parser": "^5.42.1",
+    "postcss": "^8.4.19",
+    "postcss-syntax": "^0.36.2",
+    "stylelint": "^14.15.0",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-styled-components": "^0.1.1"
   }
 }

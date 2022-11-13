@@ -16,8 +16,10 @@
   "stylelint.enable": true,
   // указывает расширения файлов которые обрабатывает stylelint
   "stylelint.validate": [
-    "css",
-    "scss"
+    "typescript",
+    "typescriptreact",
+    "javascript",
+    "javascriptreact"
   ],
   // позволяет редактировать код при сохранении согласно указанных настроек eslint
   "editor.codeActionsOnSave": {
