@@ -3,7 +3,6 @@
     "dbaeumer.vscode-eslint",
     "EditorConfig.EditorConfig",
     "stylelint.vscode-stylelint",
-    "styled-components.vscode-styled-components",
-    "syler.sass-indented"
+    "styled-components.vscode-styled-components"
   ]
 }
