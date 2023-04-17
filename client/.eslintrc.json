@@ -1,140 +1,27 @@
 {
-  /*
+    "settings": {
+        "react": {
+            "version": "detect"
+        }
+    },
+    "env": {
+        "browser": true,
+        "node": true
+    },
+    /*
     Парсер указывается чтобы при использовании своих кастомных правил
     они работали без других плагинов
-  */
-  "parser": "@typescript-eslint/parser",
-  "plugins": [
-    "@typescript-eslint"
-  ],
-  "extends": [
-    "plugin:@typescript-eslint/recommended",
-    /*В этом конфиге уже есть eslint-plugin-react, eslint-plugin-react-hooks, eslint-plugin-next*/
-    "next"
-  ],
-  "env": {
-    "browser": true,
-    "node": true
-  },
-  "rules": {
-    /* warning если использовать console.log */
-    "no-console": 1,
-    /* Убирает скобки в стрелочных функциях, если их можно опустить */
-    "arrow-parens": [
-      1,
-      "as-needed"
+    */
+    "parser": "@typescript-eslint/parser",
+    "extends": [
+        "plugin:@typescript-eslint/recommended",
+        /*В этом конфиге уже есть eslint-plugin-react, eslint-plugin-react-hooks, eslint-plugin-next*/
+        "next"
     ],
-    /* Одинарные или двойные кавычки */
-    "quotes": [
-      1,
-      "single"
-    ],
-    /* Устанавливает двойные кавычки для пропсов в jsx */
-    "jsx-quotes": [
-      2,
-      "prefer-single"
-    ],
-    /* Устанавливает точку с запятой(;) в конце строк */
-    "semi": [
-      1,
-      "always"
-    ],
-    /* Требует использования const для переменных, чье значение не меняется после объявления */
-    "prefer-const": [
-      1,
-      {
-        "destructuring": "all",
-        "ignoreReadBeforeAssign": false
-      }
-    ],
-    /* Запрещает неиспользуемые переменные */
-    "no-unused-vars": [
-      1,
-      {
-        "args": "after-used",
-        "caughtErrors": "none",
-        "ignoreRestSiblings": true
-      }
-    ],
-    /* Устанавливает колличество пробелов при отступах */
-    "indent": "off",
-    "@typescript-eslint/indent": [
-      1,
-      2
-    ],
-    /* Требует или запрещает заключительные запятые */
-    "comma-dangle": [
-      1,
-      "always-multiline"
-    ],
-    /* Автоматически расставляет пробелы после запятых */
-    "comma-spacing": [
-      2,
-      {
-        "before": false,
-        "after": true
-      }
-    ],
-    /* Пустые строки - максимум 1 */
-    "no-multiple-empty-lines": [
-      2,
-      {
-        "max": 1,
-        "maxEOF": 0
-      }
-    ],
-    /* Пустая строка перед return */
-    "newline-before-return": 2,
-    /* Максимальная длина строки */
-    "max-len": [
-      1,
-      {
-        "code": 150,
-        "ignoreComments": true,
-        "ignoreUrls": true,
-        "ignorePattern": "import"
-      }
-    ],
-    /* Вставляет пустую строку в конце файла */
-    "eol-last": [
-      1,
-      "always"
-    ],
-    /* Пробелы внутри фигурных скобок внутри jsx*/
-    "react/jsx-curly-spacing": [
-      1,
-      {
-        "when": "always",
-        "children": true,
-        "spacing": {
-          "objectLiterals": "never"
-        }
-      }
-    ],
-    /* Верблюжья нотация для переменных */
-    "camelcase": [
-      2,
-      {
-        "properties": "always",
-        "ignoreDestructuring": true
-      }
-    ],
-    /* Обеспечивает равномерное распределение интервалов внутри скобок */
-    "object-curly-spacing": [
-      1,
-      "always"
-    ],
-    /* Сводит множественные пробелы до одного */
-    "no-multi-spaces": 2,
-    /* Запрещает повторный импорт */
-    "import/no-duplicates": 2,
-    /* Выбрасывает ошибку, если не все импорты в начале файла */
-    "import/first": 2,
-    /* Вставляет пустую строку после последнего импорта */
-    "import/newline-after-import": 2,
-    /* Не разрешает бессмысленные переводы строк в строки и регулярные выражения */
-    "no-useless-escape": 1,
-    /* Проверяет массивы зависимостей у хуков */
-    "react-hooks/exhaustive-deps": 1
-  }
+    "plugins": ["@typescript-eslint"],
+    "rules": {
+        // REACT
+        "react/jsx-uses-react": "off",
+        "react/react-in-jsx-scope": "off"
+    }
 }
