@@ -3,4 +3,4 @@
 
 echo
 echo 🚀 Checking the name of branch
-yarn branch-name-lint branch-name-lint.json
+yarn branch
